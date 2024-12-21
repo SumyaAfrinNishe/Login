@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.wrapper .form-login{
+.container .form-login{
     width: 100%;
     padding: 40px;
 }
@@ -63,4 +63,13 @@
     position: relative;
     top: 10px;
     left: 150px;
+}
+
+.container .sign-up{
+    position: absolute;
+    top: 89%;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: blueviolet;
 }
