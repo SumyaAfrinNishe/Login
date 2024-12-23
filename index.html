@@ -9,16 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous""></script>
 </head>
 <body>
-    <div class="alert alert-danger" role="alert" style="width: 300%; display: flex;justify-content: center;align-items: center;">
-        <div class="icon">!</div>
-        <span>Your username or password is invalid.</span>
-      </div>
-    <!-- <div style="position:absolute; margin-top:0px; bottom:94%; width: 100%; height: auto;" id="login-error-alert" class="alert alert-danger" > -->
-        <!-- <p style="margin: 0px 10px;">Your username or password is invalid.</p> -->
-        <!-- <div class="icon">!</div>
-        Your username or password is invalid.
-        
-    </div> -->
+    <div class="alert" style="width: 100%; justify-content:center; align-items: center; margin:0; padding:0;">
+        <div class="alert alert-danger" style="width: 100%;" role="alert" >
+            <div class="icon">!</div>
+            <p style="margin: 0 5px; display: inline-block;">Your username or password is invalid.</p>
+          </div>
+    </div>
 
     <div class="container">
         <div class="form-login" id="loginForm">
@@ -37,7 +33,10 @@
                     <a href="#" style="text-decoration: none;">Forgot Your Password?</a>
                 </div>
 
-                <button type="submit" id="submit" class="btn">Continue</button>
+                <button type="submit" id="submit" class="btn">
+                    <span class="logo" id="logo"></span>
+                    <span class="button-text">Continue</span>
+                </button>
                 <div class="sign-up">
                     <p>Don't you have account? <span><a href="#" style="text-decoration: none;">Sign Up Now!</a></span></p>
                 </div>
